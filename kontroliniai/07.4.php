@@ -5,16 +5,22 @@ Sukurkite PHP skriptą, kuriame būtų aprašytas tekstas sudarytas iš žodži�
  * teksto prijunkite simbolį '*'. Sujunkite visus masyvo elementus į vieną teksto eilutę sujungdami juos horizontaliais
  * '-' brūšniais.
  */
+//
 
+$s="Grazi diena!,Grazus vakaras!";//apsirasiau zodziais masyva
 
-$s="Grazi diena!,Grazus vakaras!";
-echo $s * ;
-
-$e=explode(' ',$s);
+$e=explode(' ',$s);//masyvo pradzia
 
 foreach ($s as $raides) {//foreach ciklas
-    $e[$m++]=strtoupper($e[$raides]);//pakeisti teksta i did.raides prisiejant indeksa +1
+    echo $raides=>strtoupper($s).'*';//pakeisti teksta i did.raides
     }
-$v=implode('-',$e);
-//var_dump($v);
-echo"$raides <br>";
+$v=implode('-',$e);//masyvo galas
+
+$s = "aaa bbb ccc";
+$m = explode(' ', $s);
+for ($i=0; $i<count($m); $i++){
+    $m[$i] = strtoupper($m[$i]) . '*';
+}
+$x = implode('-', $m);
+echo $x;
+

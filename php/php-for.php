@@ -6,7 +6,7 @@ for ($i=0; $i<count($masyvas); $i++){
     $masina= $masyvas[$i];
     echo($i+1).'.'. $masina.'<br>';
 }
-
+//ciklas tipo foreach
 $ii=10;
 foreach ($masyvas as $masina){
     echo($i++).'.'. $masina.'<br>';

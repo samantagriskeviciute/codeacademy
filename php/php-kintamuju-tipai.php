@@ -1,3 +1,4 @@
+
 <?php
 
 $a=true; //logine reiksme-teisingai
